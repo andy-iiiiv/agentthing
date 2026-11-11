@@ -1,0 +1,85 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 9 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 9 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 9 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 9 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 1 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 1 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- >/dev/null 2>&1 || true # agentthing",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -m 145 -X POST 'http://127.0.0.1:8765/hook?agent=codex' -H 'content-type: application/json' --data-binary @- || true # agentthing",
+            "timeout": 150
+          }
+        ]
+      }
+    ]
+  }
+}

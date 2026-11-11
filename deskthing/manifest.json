@@ -1,0 +1,32 @@
+{
+  "id": "agentthing",
+  "isWebApp": true,
+  "requires": [],
+  "label": "AgentThing",
+  "version": "0.8.0",
+  "version_code": 11.0,
+  "compatible_server": [
+    11
+  ],
+  "compatible_client": [
+    11
+  ],
+  "description": "A desk status board and controller for Claude Code sessions and Codex threads on your Mac. See what's running and what needs you, approve or deny and answer Claude's questions with the dial, pull a session up on your Mac, and hold the dial to dictate. Not affiliated with Anthropic or OpenAI.",
+  "author": "andy-iiiiv",
+  "platforms": [
+    "mac"
+  ],
+  "homepage": "https://github.com/andy-iiiiv/agentthing",
+  "repository": "https://github.com/andy-iiiiv/agentthing",
+  "tags": [
+    "productivity",
+    "developer",
+    "ai"
+  ],
+  "requiredVersions": {
+    "server": ">=0.11.0",
+    "client": ">=0.11.0"
+  },
+  "updateUrl": "https://github.com/andy-iiiiv/agentthing",
+  "template": "full"
+}
